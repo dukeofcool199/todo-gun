@@ -3,15 +3,20 @@
 	import routes from './router/routes';
 	import { link } from 'svelte-spa-router';
 	import TextInputForm from './components/TextInputForm.svelte';
+	import Login from './pages/Login.svelte';
+
+	let user = '';
+	let pass = '';
 </script>
 
 <template>
-	<h1 class="bg-red-500">Simple TODO APP </h1>
+	<Login bind:userName={user} />
 
-	<TextInputForm placeHolder="more stuff" />
-	<Router {routes} />
+	<p>content of user: {user}</p>
 
-	<a href="/other" use:link> hello there</a>
-
-	<p> built with love with Gun.js and svelte.js</p>
+	<div class="m-auto">
+		<div>
+			<Router {routes} />
+		</div>
+	</div>
 </template>
