@@ -1,7 +1,7 @@
 <script lang="ts">
-	export const defaultValue = '';
-	export const placeHolder = 'please enter a value';
-	export const label = 'testing label';
+	export let defaultValue = '';
+	export let placeHolder = 'please enter a value';
+	export let label = 'testing label';
 
 	let currentValue = defaultValue;
 </script>

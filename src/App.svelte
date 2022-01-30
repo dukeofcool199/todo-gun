@@ -6,7 +6,7 @@
 </script>
 
 <template>
-	<h1>Simple TODO APP </h1>
+	<h1 class="bg-red-500">Simple TODO APP </h1>
 
 	<TextInputForm placeHolder="more stuff" />
 	<Router {routes} />
